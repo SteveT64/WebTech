@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>REPORT</h2>
+
+<ul>
+  <li>Inkscape and Gimp to make Logo, IS for text, star and spiral. GIMP for After effects.</li>
+  <li>Client implements Youtube player API and also YT Data api to search for videos. To get this to work took a considerable time, basic code to load the apis was copied from examples in api docs. </li>
+	<li>HTML for playlist items is generated in js. All generation of HTML was original. Multiple searches for HTML DOM object methods and js functions were necessary.</li>
+	<li>Server sends page and also responds to requests to store and retrieve playlists. Server implemented using node.js, express,bodyParser and mysql .</li>
+	<li>A lot of time was spend researhcing how to use get, post and send.</li>
+	<li>Structure of the functions in server.js and callbacks is inspired by examples but understood and reimplemented by myself</li>
+	<li>SQL queries to load list of playlists, save playlists and retrieve playlists was implemented in sql.js</li>
+	<li>This file contains connection information that will need to be edited to connect to your SQL DB. An SQL file has been supplied to create the relevant table.</li>
+	<li>This file was also formulated as a module with functions to be called in server.js. SQL queries and function/callback structure inspired by examples but reimplemented by me.</li>
+	<li>Functionality client side to interface with server uses jQuery, again inspired by examples but reimplemented. </li>
+	<li>A long time was spent researching how to do the server client connection and communication.</li>
+	<li>HTML for index.html is original, lost of research done on how to arrange a page, classes, events, including scripts. Icons and fonts taken from google. Normalize used to maintain  consistency between browsers</li>
+	<li>CSS file compiled from SCSS using Ruby gem SASS. Some CSS styling tips have been borrowed from Bootstrap. Lots of original work in there too. A lot of research was done in to how to get the effects I desired.</li>
+	<li>Unfortunately I was ran out of time before being able to fix one bug. After reloading a playlist the buttons are non functional. I would fix this by adding the videoID to the data stored in the DB and then recreating the onclick functions upon load.</li>
+</ul>  
+
+</body>
+</html>

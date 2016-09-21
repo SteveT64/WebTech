@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Search</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="sheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+   <div class="header cf">
+      <h1><img src="logo2.png"/></h1>
+    </div>
+    <div class="wrapper cf">
+      <div class="column-container cf">
+        <div class="column column--left">
+          <div id="player"></div>
+          <div id="playlist"></div>
+        </div>
+        <div class="column column--right">
+          <div class="box box--search">
+            <h2><i class="material-icons">video_library</i>Search for videos</h2>
+            <div id="buttons">
+              <label> <input id="query" value='cats' type="text"/><button id="search-button" disabled onclick="search()">Search</button></label>
+            </div>
+            <div id="search-container"></div>
+          </div>
+          <div class="box box--select-playlist">
+            <h2><i class="material-icons">storage</i>Select your playlist</h2>
+            <div class="playlist-select-container">
+              <select id="playlistselect">
+              </select>
+              <button onclick="loadPlaylist()">Select</button>
+            </div>
+          </div>
+          <div class="box box--save-playlist">
+            <h2><i class="material-icons">save</i>Save your playlist</h2>
+            <div id="playlistsaved"> </div>
+            <div class="playlist-save-container">
+              <input name="label" type="text" id="playlistlabel" />
+              <button onclick="createPlaylist()">Save Playlist</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <div class="footer cf">
+      <p>Footer information goes here</p>
+    </div>
+    <div id="jsondebug">
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="player.js"></script>
+    <script src="search.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=initSearch"></script>
+    <script src="playlist.js"></script>
+  </body>
+</html>
